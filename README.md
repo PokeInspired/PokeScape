@@ -42,7 +42,7 @@ PokeScape is being released this way because:
  
 **!!! THIS WILL CREATE A** `credentials.properties` **INSIDE YOUR** `.runelite` **FOLDER. DO NOT SHARE THIS WITH ANYONE !!!**
 
-8. Double click `Launch PokeScape RuneLite.bat`.
+8. Double click `Launch PokeScape RuneLite.bat`, if it can not find your RuneLite folder it will ask you to choose it. 
 9. RuneLite should open with PokeScape loaded.
 10. Search for `PokeScape` in the plugin list and enable it if needed.
 11. After it works, run `Create Desktop Shortcut.bat` to make a desktop icon. **This is the preferred way to launch PokeScape**
