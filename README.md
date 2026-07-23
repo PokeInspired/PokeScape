@@ -49,6 +49,16 @@ PokeScape is being released this way because:
 
 The launcher automatically creates RuneLite's sideloaded plugin folder and copies `pokescape.jar` into it.
 
+## Important Download Note
+
+Do **not** use GitHub's green **Code > Download ZIP** button for the playable build.
+
+This repository uses Git LFS for the large `pokescape.jar` file. GitHub source-code ZIP downloads can include a tiny pointer file instead of the real jar. If your `pokescape.jar` is about 1 KB, you downloaded the source archive, not the playable release.
+
+Use the **Releases** page instead and download:
+
+`PokeScape-v0.3-SideLoader.zip`
+
 ## Jagex Launcher Notes
 
 If RuneLite files are missing or out of date, open normal RuneLite once, let it fully load and update, close it, then use the PokeScape launcher again.
@@ -108,4 +118,3 @@ If you want a fresh start:
 1. Close RuneLite.
 2. Run `Reset PokeScape Save.bat`.
 3. Launch PokeScape again.
-
