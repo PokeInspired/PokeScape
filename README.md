@@ -33,18 +33,20 @@ PokeScape is being released this way because:
 ## Quick Start
 
 1. Download this folder.
-2. Do not run it from inside a zip file. Extract it first.
+2. Do not run it from inside a zip file. Extract it first. **It can be placed anywhere you like.**
 3. Close every RuneLite window.
-4. Double click `Launch PokeScape RuneLite.bat`.
-5. RuneLite should open with PokeScape loaded.
-6. Search for `PokeScape` in the plugin list and enable it if needed.
-7. After it works, run `Create Desktop Shortcut.bat` to make a desktop icon.
+4. Run RuneLite **(NOT through Jagex Launcher)** at least once. Then close it.
+5. Open windows search bar and look for **RuneLite (Configure)**
+6. In **Client Arguments** Type: `--insecure-write-credentials` and click save.
+7. Run Runelite through the Jagex Launcher using your profile once. Then close it. **!!! THIS WILL CREATE A `credentials.properties` INSIDE YOUR `.runelite` FOLDER. DO NOT        SHARE THIS WITH ANYONE !!!  **
+8. Double click `Launch PokeScape RuneLite.bat`.
+9. RuneLite should open with PokeScape loaded.
+10. Search for `PokeScape` in the plugin list and enable it if needed.
+11. After it works, run `Create Desktop Shortcut.bat` to make a desktop icon. **This is the preferred way to launch PokeScape**
 
 The launcher automatically creates RuneLite's sideloaded plugin folder and copies `pokescape.jar` into it.
 
 ## Jagex Launcher Notes
-
-The sideloader starts RuneLite directly in developer mode. If RuneLite asks you to log in, use the same RuneLite/Jagex setup you normally use.
 
 If RuneLite files are missing or out of date, open normal RuneLite once, let it fully load and update, close it, then use the PokeScape launcher again.
 
@@ -81,12 +83,6 @@ PokeScape rewards are plugin-only. They do not create, change, or trade real OSR
 This is a work-in-progress test build. Balance, drop rates, images, rewards, and features may change between versions.
 
 ## Troubleshooting
-
-If PokeScape does not appear:
-
-1. Close RuneLite.
-2. Run `Launch PokeScape RuneLite - Debug.bat`.
-3. Copy the text from the black window and send it to Jay.
 
 If you want a fresh start:
 
