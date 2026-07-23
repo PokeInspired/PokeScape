@@ -4,6 +4,20 @@ Welcome to **PokeScape**, a RuneLite side game about collecting animated fantasy
 
 Open packs, build your album, trade duplicates, earn shards, chase shiny cards, reveal wilderness cards, follow treasure maps, and slowly turn normal OSRS activity into a collectible card adventure.
 
+## Screenshots
+
+### Main Sidebar
+
+![PokeScape main sidebar](images/sidebar-main.png)
+
+### Collection Album
+
+![PokeScape collection album](images/collection-album.png)
+
+### PokeScape Wheel
+
+![PokeScape spinning wheel](images/pokescape-wheel.png)
+
 ## What This Is
 
 PokeScape is a **sideloaded RuneLite plugin**. It runs locally through RuneLite developer mode and loads from the `pokescape.jar` included in this folder.
