@@ -53,6 +53,22 @@ The launcher automatically creates RuneLite's sideloaded plugin folder and copie
 
 If RuneLite files are missing or out of date, open normal RuneLite once, let it fully load and update, close it, then use the PokeScape launcher again.
 
+
+## Privacy And Safety
+
+PokeScape does **not** save, gather, record, upload, or send any RuneScape/Jagex account information.
+
+The plugin only stores PokeScape game progress locally on your own computer, such as cards collected, shards, packs, runes, map progress, and settings. This data is saved through RuneLite’s normal local configuration system.
+
+PokeScape does not have a login system, does not ask for your password, does not read your Jagex credentials, and does not send your account details anywhere.
+
+The project is open source, so you can inspect the files yourself before running it. You can also scan downloaded files using services like:
+
+[VirusTotal](https://www.virustotal.com/)
+
+If you do not trust a sideloaded plugin, do not run it. Only use plugins from people and projects you trust.
+
+
 ## Does Developer Mode Stop Other Plugins Updating?
 
 Developer mode itself does not stop normal RuneLite plugins from updating.
