@@ -38,7 +38,10 @@ PokeScape is being released this way because:
 4. Run RuneLite **(NOT through Jagex Launcher)** at least once. Then close it.
 5. Open windows search bar and look for **RuneLite (Configure)**
 6. In **Client Arguments** Type: `--insecure-write-credentials` and click save.
-7. Run Runelite through the Jagex Launcher using your profile once. Then close it. **!!! THIS WILL CREATE A `credentials.properties` INSIDE YOUR `.runelite` FOLDER. DO NOT        SHARE THIS WITH ANYONE !!!  **
+7. Run Runelite through the Jagex Launcher using your profile once. Then close it.
+ 
+**!!! THIS WILL CREATE A `credentials.properties` INSIDE YOUR `.runelite` FOLDER. DO NOT SHARE THIS WITH ANYONE !!!  **
+
 8. Double click `Launch PokeScape RuneLite.bat`.
 9. RuneLite should open with PokeScape loaded.
 10. Search for `PokeScape` in the plugin list and enable it if needed.
