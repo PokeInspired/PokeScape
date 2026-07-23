@@ -1,0 +1,376 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PokeScape 0.3 Wiki</title>
+  <style>
+    :root {
+      --bg: #12100e;
+      --panel: #211b16;
+      --panel2: #2d241c;
+      --gold: #ddb153;
+      --cyan: #55caee;
+      --text: #eee0be;
+      --muted: #b7a987;
+      --green: #72dc78;
+      --red: #ff6b5f;
+      --purple: #c765f4;
+      --orange: #f0a23a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #26333a 0, var(--bg) 420px);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+    }
+    header {
+      padding: 34px 24px 24px;
+      border-bottom: 1px solid rgba(221, 177, 83, 0.35);
+      background: linear-gradient(135deg, rgba(85, 202, 238, 0.12), rgba(221, 177, 83, 0.10));
+    }
+    main { max-width: 1180px; margin: 0 auto; padding: 24px; }
+    h1, h2, h3 { color: #ffe896; margin: 0 0 10px; }
+    h1 { font-size: 42px; }
+    h2 { margin-top: 28px; border-bottom: 1px solid rgba(221, 177, 83, 0.25); padding-bottom: 6px; }
+    h3 { margin-top: 18px; color: var(--cyan); }
+    p { margin: 8px 0 12px; }
+    a { color: var(--cyan); }
+    .subtitle { color: var(--muted); max-width: 820px; }
+    .notice {
+      border: 1px solid var(--gold);
+      background: rgba(221, 177, 83, 0.10);
+      padding: 12px 14px;
+      margin-top: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin: 14px 0;
+    }
+    .card {
+      background: linear-gradient(180deg, var(--panel), #161514);
+      border: 1px solid rgba(221, 177, 83, 0.32);
+      padding: 14px;
+      border-radius: 8px;
+    }
+    .card strong { color: #ffe896; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      background: rgba(0, 0, 0, 0.18);
+    }
+    th, td {
+      border: 1px solid rgba(221, 177, 83, 0.22);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { color: #ffe896; background: rgba(221, 177, 83, 0.10); }
+    code {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #e7f8ff;
+    }
+    ul { padding-left: 22px; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; margin: 2px 4px 2px 0; }
+    .common { color: #ffffff; }
+    .uncommon { color: #6be36f; }
+    .rare { color: #55aaff; }
+    .epic { color: #c765f4; }
+    .legendary { color: #f0a23a; }
+    .utility { color: #ffdf4f; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PokeScape 0.3 Wiki</h1>
+    <p class="subtitle">A collection side game where Old School RuneScape activities feed a RuneScape themed monster-card album.</p>
+    <div class="notice">
+      <strong>Work in progress:</strong> PokeScape 0.3 is an early build. Some content, cards, evolutions, Shiney cards, Wilderness cards, rewards, and balancing may not be available yet.
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>What PokeScape Is</h2>
+      <p>PokeScape is a collection game that runs alongside Old School RuneScape. Normal OSRS actions can earn PokeScape shards, runes, essences, packs, cards, map rewards, and evolution materials.</p>
+      <p>The main loop is simple: play OSRS, earn resources, open animated packs, reveal cards on the game screen, fill the album, trade duplicates, evolve cards, and chase rarer rewards through the wheel, bosses, clues, and treasure maps.</p>
+      <p>New players start with an empty collection: no cards, shards, packs, runes, essences, stones, fragments, Shard Dust, or free spins.</p>
+    </section>
+
+    <section>
+      <h2>Current Main Features</h2>
+      <div class="grid">
+        <div class="card"><strong>Packs</strong><br>Silver, Mithril, Rune, and Shiney packs open on the main game screen. The pack appears first, then plays the opening animation, then deals revealable cards.</div>
+        <div class="card"><strong>Album</strong><br>View collected cards, zoom into card images, navigate with arrows, filter, sort, and preview future locked slots.</div>
+        <div class="card"><strong>Wheel</strong><br>Spend shards or free spins to roll cards, shards, packs, loot bags, free spins, and Wilderness Fragments. The wheel spins to the already rolled reward, then plays the reward animation.</div>
+        <div class="card"><strong>Duplicate Trade</strong><br>Trade duplicate cards for shards or Shard Dust using the full-screen duplicate exchange and reward animation.</div>
+        <div class="card"><strong>Evolutions</strong><br>Some cards evolve using runes, essences, and evolution stones.</div>
+        <div class="card"><strong>Drops</strong><br>Runes and essences can come from XP drops, monsters, bosses, and clue reward caskets.</div>
+        <div class="card"><strong>Treasure Maps</strong><br>Buy Wildy or World maps, follow directional clues, click the treasure casket, watch the prize reel, then claim the rolled treasure.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Album Sections</h2>
+      <table>
+        <tr><th>Section</th><th>Slots</th><th>Status</th></tr>
+        <tr><td>PokeScape Cards</td><td>188 total: 151 creature cards, 26 trainer cards, 11 energy cards</td><td>Active in v0.3</td></tr>
+        <tr><td>Shiney Cards</td><td>44</td><td>Active in v0.3. Shiney cards use the holo overlay and can be previewed in the Shiney tab.</td></tr>
+        <tr><td>Wilderness Cards</td><td>25</td><td>Coming soon by default. Toggle can show locked slots.</td></tr>
+      </table>
+      <p>The album header counts all planned sections, so collection percentage can look low in v0.3. That is expected.</p>
+    </section>
+
+    <section>
+      <h2>Card Rarities</h2>
+      <p>Rarity colours are used during pack and wheel card reveals.</p>
+      <p>
+        <span class="tag common">Common: white</span>
+        <span class="tag uncommon">Uncommon: green</span>
+        <span class="tag rare">Rare: blue</span>
+        <span class="tag epic">Epic: purple</span>
+        <span class="tag utility">Utility: yellow</span>
+      </p>
+      <p>Trainer and energy cards are treated as utility cards visually, and they roll in the same space as uncommon cards for packs and wheel card rewards.</p>
+    </section>
+
+    <section>
+      <h2>Packs</h2>
+      <table>
+        <tr><th>Pack</th><th>Cost</th><th>Cards</th><th>Rules</th></tr>
+        <tr><td>Silver Pack</td><td>15 shards</td><td>3</td><td>Per card slot: 0.5% Shiney, 40% uncommon, 59.5% common.</td></tr>
+        <tr><td>Mithril Pack</td><td>30 shards</td><td>4</td><td>Per card slot: 1% Shiney, 5% rare, 30% uncommon, 64% common.</td></tr>
+        <tr><td>Rune Pack</td><td>60 shards</td><td>5</td><td>Always includes 1 rare. Each remaining common slot rolls 1.5% Shiney, 60% uncommon, 38.5% common. The pack also has a 20% chance to upgrade one remaining common slot into an extra rare, and a 5% chance to upgrade one remaining common slot into an epic.</td></tr>
+        <tr><td>Shiney Pack</td><td>100 Shard Dust</td><td>1</td><td>Gives 1 random non-legendary Shiney card with the Shiney reveal animation.</td></tr>
+      </table>
+      <p>Normal packs do not include third evolutions, legendary cards, Eevee evolutions, Mew, Mewtwo, or the three legendary birds. Those are intended for other systems such as evolution or future rewards. Shiney rolls also exclude Shiney legendary cards.</p>
+      <p>If you own a pack, you can open it without spending shards. If you choose to buy a pack with shards, you can cancel before opening and get the shards back.</p>
+    </section>
+
+    <section>
+      <h2>Wheel</h2>
+      <p>The PokeScape Wheel is opened from the Collection tab. The wheel is adaptive to different RuneLite canvas sizes.</p>
+      <ul>
+        <li>Minimum spin is 10 shards.</li>
+        <li>Free spins cost 0 shards.</li>
+        <li>Free spins always use the same odds as a 10 shard spin.</li>
+        <li>Higher shard stakes improve some reward odds.</li>
+        <li>Wilderness fragments start at 0.1% on a 10 shard spin.</li>
+        <li>Wilderness fragments max at 5% at 500 shards.</li>
+      </ul>
+      <h3>Current Wheel Odds</h3>
+      <table>
+        <tr><th>Reward</th><th>10 shard spin</th><th>High stake direction</th></tr>
+        <tr><td>Card</td><td>50.9%</td><td>Goes down as other rewards improve.</td></tr>
+        <tr><td>Shards</td><td>22.0%</td><td>Can rise up to 28.0%.</td></tr>
+        <tr><td>Pack</td><td>7.0%</td><td>Can rise up to 13.0%.</td></tr>
+        <tr><td>Free Spins</td><td>16.0%</td><td>Can rise up to 18.0%.</td></tr>
+        <tr><td>Loot Bag</td><td>4.0%</td><td>Can rise up to 7.0%.</td></tr>
+        <tr><td>Wilderness Fragment</td><td>0.1%</td><td>Maxes at 5.0% at 500 shards.</td></tr>
+      </table>
+      <h3>Wheel Rewards</h3>
+      <table>
+        <tr><th>Reward</th><th>What happens</th></tr>
+        <tr><td>Card</td><td>Rolls a card reward. Current wheel card rarity odds: common 90%, uncommon 5%, rare 3%, epic 2%.</td></tr>
+        <tr><td>Shards</td><td>Gives a shard amount based around the stake, with small random variation.</td></tr>
+        <tr><td>Pack</td><td>Rolls a Silver, Mithril, or Rune pack. Higher stake improves the chance at better packs.</td></tr>
+        <tr><td>Free Spins</td><td>Gives 1, 2, or 3 free spins.</td></tr>
+        <tr><td>Loot Bag</td><td>Gives 1 or 2 random runes.</td></tr>
+        <tr><td>Wilderness Fragment</td><td>Gives 1 wilderness fragment and plays the special reward animation.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Shards</h2>
+      <p>Shards are the main currency for packs and wheel spins.</p>
+      <ul>
+        <li>XP shard gain is fixed at 1000 XP per shard.</li>
+        <li>If a player needs 200 XP and gains 600 XP, they receive 1 shard and the tracker rolls over to 600 XP remaining.</li>
+        <li>XP shard gain can be disabled in the PokeScape settings.</li>
+        <li>Duplicate card trading can also give shards.</li>
+        <li>The wheel can also award shards.</li>
+      </ul>
+      <h3>Shard Dust</h3>
+      <p>Shard Dust is the Shiney currency. It is used to buy Shiney Packs.</p>
+      <ul>
+        <li>Duplicate Shiney cards trade for 10 Shard Dust each.</li>
+        <li>Normal duplicate trades have a 20% chance to convert their shard payout into Shard Dust instead.</li>
+        <li>When normal duplicate trades convert, the dust amount is <code>ceil(shards x 1.5)</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Duplicate Trade</h2>
+      <p>The duplicate exchange opens as a full-screen overlay. It now scales to different canvas sizes.</p>
+      <table>
+        <tr><th>Card type</th><th>Trade rate</th></tr>
+        <tr><td>Common</td><td>4 duplicate cards = 1 shard</td></tr>
+        <tr><td>Uncommon</td><td>3 duplicate cards = 1 shard</td></tr>
+        <tr><td>Trainer cards</td><td>Treated as uncommon for trading</td></tr>
+        <tr><td>Rare</td><td>2 duplicate cards = 1 shard</td></tr>
+        <tr><td>Epic</td><td>1 duplicate card = 1 shard</td></tr>
+        <tr><td>Shiney duplicate cards</td><td>1 duplicate Shiney = 10 Shard Dust</td></tr>
+      </table>
+      <p>Left-click adds a duplicate to the trade. Right-click removes one. Normal card trades have a 20% chance to award Shard Dust instead of shards; when that happens, the trade animation uses the Shard Dust reward image.</p>
+    </section>
+
+    <section>
+      <h2>Evolution</h2>
+      <p>Some cards cannot be collected directly from packs. They must be evolved from earlier cards.</p>
+      <ul>
+        <li>Evolution consumes 1 copy of the original card.</li>
+        <li>Evolution grants 1 copy of the evolved card.</li>
+        <li>If the evolved card has a Shiney version, evolution has a 4% chance to also award the Shiney version.</li>
+        <li>Costs can include runes, essences, and evolution stones.</li>
+        <li>If you do not have the required items, clicking the requirement plays a rejected sound.</li>
+      </ul>
+      <h3>Evolution Stones</h3>
+      <p>Evolution stones roll when a clue reward casket is opened.</p>
+      <table>
+        <tr><th>Clue tier</th><th>Evolution stone chance</th></tr>
+        <tr><td>Beginner</td><td>1:20</td></tr>
+        <tr><td>Easy</td><td>1:15</td></tr>
+        <tr><td>Medium</td><td>1:10</td></tr>
+        <tr><td>Hard</td><td>1:5</td></tr>
+        <tr><td>Elite</td><td>1:3</td></tr>
+        <tr><td>Master</td><td>1:1</td></tr>
+      </table>
+      <p>If no stone is rolled, PokeScape sends a chat message saying the casket did not reveal an Evolution Stone this time.</p>
+    </section>
+
+    <section>
+      <h2>Rune Drops From XP</h2>
+      <p>Every XP drop from the listed skill rolls each listed rune at 1:150.</p>
+      <table>
+        <tr><th>Skill</th><th>Rune reward</th></tr>
+        <tr><td>Attack, Strength, Defence, Hitpoints, Agility</td><td>Body Rune</td></tr>
+        <tr><td>Ranged</td><td>Death Rune</td></tr>
+        <tr><td>Prayer</td><td>Soul Rune</td></tr>
+        <tr><td>Magic</td><td>Mind Rune, Astral Rune</td></tr>
+        <tr><td>Runecraft</td><td>Cosmic Rune, Astral Rune</td></tr>
+        <tr><td>Construction</td><td>Earth Rune, Cosmic Rune</td></tr>
+        <tr><td>Herblore</td><td>Nature Rune, Mind Rune</td></tr>
+        <tr><td>Thieving</td><td>Chaos Rune</td></tr>
+        <tr><td>Crafting</td><td>Cosmic Rune</td></tr>
+        <tr><td>Fletching</td><td>Nature Rune</td></tr>
+        <tr><td>Slayer</td><td>Chaos Rune, Death Rune</td></tr>
+        <tr><td>Hunter</td><td>Nature Rune, Chaos Rune</td></tr>
+        <tr><td>Mining</td><td>Earth Rune, Lava Rune</td></tr>
+        <tr><td>Smithing</td><td>Earth Rune, Lava Rune</td></tr>
+        <tr><td>Fishing</td><td>Water Rune</td></tr>
+        <tr><td>Cooking</td><td>Fire Rune, Water Rune</td></tr>
+        <tr><td>Firemaking</td><td>Fire Rune, Lava Rune</td></tr>
+        <tr><td>Woodcutting, Farming</td><td>Nature Rune</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Rune Drops From Monster Kills</h2>
+      <p>These are custom PokeScape drops from credited monster kills. The plugin only rolls these after you have tagged the NPC and received kill credit.</p>
+      <table>
+        <tr><th>Rune</th><th>Monster sources</th></tr>
+        <tr><td>Fire Rune</td><td>Abyssal demon 1:75, Fire giant 1:100, Pyrefiend 1:90, Pyrelord 1:90, Flaming pyrelord 1:35, Cerberus 1:10, Drake 1:75, Red dragon 1:50, Brutal red dragon 1:25</td></tr>
+        <tr><td>Water Rune</td><td>Cave kraken 1:75, Kraken 1:12, Waterfiend 1:60, Ice giant 1:90, Ice warrior 1:90, Ice spider 1:100, Ice troll runt 1:90, Ice troll male 1:80, Ice troll female 1:80, Ice troll grunt 1:80, Ice Troll King 1:35, Icefiend 1:100</td></tr>
+        <tr><td>Nature Rune</td><td>Tree spirit 1:70, Cockatrice 1:90, Cave bug 1:125, Moss giant 1:75, Moss guardian 1:35, Ancient Zygomite 1:45, Zygomite 1:75, Turoth 1:70, Kurask 1:65, Scarabs 1:80, Scarab swarm 1:90, Scarab mage 1:60, Giant scarab 1:25</td></tr>
+        <tr><td>Cosmic Rune</td><td>Shadow warrior 1:85, Chaos dwarf 1:90, Molanisk 1:100, Ice warrior 1:100, Otherworldly being 1:75, Wallasalki 1:60, Tortured gorilla 1:45, Sergeant Strongstack 1:35, Sergeant Grimspike 1:35, Sergeant Steelwill 1:35</td></tr>
+        <tr><td>Earth Rune</td><td>Earth wizard 1:75, Earth warrior 1:75, Moss giant 1:95, Hill giant 1:100, Rockslug 1:100, Gargoyle 1:65, Sulphur lizard 1:90, Sand Crab 1:130, Ammonite Crab 1:110, Obor 1:25, Bryophyta 1:20</td></tr>
+        <tr><td>Mind Rune</td><td>Dark wizard 1:80, Wizard 1:90, Imp 1:100, Infernal Mage 1:70, Chaos druid 1:95, Abyssal leech 1:80, Abyssal guardian 1:65, Abyssal walker 1:55, Dagannoth Rex 1:35</td></tr>
+        <tr><td>Body Rune</td><td>Goblin 1:150, Monk 1:125, Warrior 1:110, Guard 1:105, Barbarian 1:100, Al-Kharid warrior 1:90, Minotaur 1:90, Flesh crawler 1:85, Hill giant 1:85, Moss giant 1:80, Hobgoblin 1:75, Jogre 1:70, Cyclops 1:60, Ogress Warrior 1:45</td></tr>
+        <tr><td>Chaos Rune</td><td>Chaos druid 1:90, Chaos dwarf 1:85, Chaos dwarf hand cannoneer 1:55, Lesser demon 1:95, Greater demon 1:65, Black demon 1:70, Abyssal leech 1:100, Abyssal guardian 1:80, Abyssal walker 1:70, Abyssal demon 1:45, Infernal Mage 1:80, Otherworldly being 1:85, Molanisk 1:100</td></tr>
+        <tr><td>Soul Rune</td><td>Greater Nechryael 1:55, Steel dragon 1:75, Kraken 1:35, Mithril dragon 1:50, Brutal black dragon 1:45, Abyssal Sire 1:18, Callisto 1:20, Skeletal Wyvern 1:65, Spiritual mage 1:70</td></tr>
+        <tr><td>Astral Rune</td><td>Spiritual mage 1:55, Suqah 1:75</td></tr>
+        <tr><td>Lava Rune</td><td>Lava dragon 1:35, Lava beast 1:45, TzHaar-Ket 1:75, TzHaar-Xil 1:75, TzHaar-Mej 1:65, TzHaar-Hur 1:90, JalTok-Jad 1:18, TzKal-Zuk 1:8</td></tr>
+        <tr><td>Death Rune</td><td>Ankou 1:80, Skeleton 1:120, Zombie 1:120, Ghost 1:100, Chaos druid 1:90, Elder Chaos druid 1:45, Dark warrior 1:100, Rogue 1:95, Magic axe 1:75, Hellhound 1:70, Greater demon 1:55, Black demon 1:45, Green dragon 1:65, Black dragon 1:35</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Essence Drops</h2>
+      <p>Essence drops are custom PokeScape drops from credited kills.</p>
+      <table>
+        <tr><th>Essence</th><th>Source</th><th>Rate or amount</th></tr>
+        <tr><td>Electric Essence</td><td>Killerwatt</td><td>1:15</td></tr>
+        <tr><td>Electric Essence</td><td>Rune dragon</td><td>+5 every kill</td></tr>
+        <tr><td>Electric Essence</td><td>Alchemical Hydra</td><td>+50 every kill</td></tr>
+        <tr><td>Volcanic Essence</td><td>TzHaar-Hur, TzHaar-Mej, TzHaar-Xil, TzHaar-Ket</td><td>1:3</td></tr>
+        <tr><td>Volcanic Essence</td><td>Lava dragon</td><td>+5 every kill</td></tr>
+        <tr><td>Volcanic Essence</td><td>TzTok-Jad</td><td>+200 every kill</td></tr>
+        <tr><td>Water Essence</td><td>Waterfiend</td><td>1:15</td></tr>
+        <tr><td>Water Essence</td><td>Cave kraken</td><td>1:15</td></tr>
+        <tr><td>Water Essence</td><td>Dagannoth Rex, Dagannoth Prime, Dagannoth Supreme</td><td>+20 every kill</td></tr>
+        <tr><td>Water Essence</td><td>Kraken</td><td>+20 every kill</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Boss Pack Rewards</h2>
+      <p>Credited boss kills can roll a pack at 1:5. Easier bosses tend to award Silver or Mithril packs, while harder bosses and raids tend to award Rune packs.</p>
+      <p>When a boss pack is awarded, it can upgrade into a Shiney Pack. Easy bosses upgrade at 1:125, medium bosses at 1:100, hard bosses at 1:75, and raid bosses at 1:50. Shiney Pack rewards do not roll Shiney legendary cards.</p>
+      <p>Examples include Obor, Bryophyta, Scurrius, Giant Mole, Barrows brothers, King Black Dragon, Kalphite Queen, Dagannoth Kings, Kraken, Zulrah, Vorkath, Phantom Muspah, Abyssal Sire, Cerberus, Alchemical Hydra, God Wars bosses, Nex, TzTok-Jad, TzKal-Zuk, The Doom of Mokhaiotl, and raid bosses.</p>
+    </section>
+
+    <section>
+      <h2>Buried Treasure Maps</h2>
+      <p>Treasure Maps live on the Maps tab. Buy a map first, then click Begin when you are ready to start tracking it. Only one map can be active at a time. If you die while a map is active, the active map is lost and no reward is given.</p>
+      <ul>
+        <li>Wildy Maps cost 300 shards and must be tracked inside the Wilderness.</li>
+        <li>World Maps cost 150 shards and lead to non-Wilderness locations around the rest of the game world.</li>
+        <li>The Track button gives direction-only chat clues such as north, south, east, or west. It does not reveal the exact tile count.</li>
+        <li>When you stand on the correct tile and press Track, a treasure casket appears on the main game screen.</li>
+        <li>The casket does not open instantly. Click the closed casket to open it, then the prize reel rolls and freezes on the actual reward.</li>
+        <li>The reward is not added until the reveal is complete and you click to continue.</li>
+      </ul>
+      <h3>Wildy Map Rewards</h3>
+      <table>
+        <tr><th>Reward</th><th>Chance</th></tr>
+        <tr><td>150 Shards</td><td>42%</td></tr>
+        <tr><td>Rune Pack</td><td>25%</td></tr>
+        <tr><td>25 Shard Dust</td><td>14%</td></tr>
+        <tr><td>4-6 assorted runes</td><td>10%</td></tr>
+        <tr><td>Shiney Pack</td><td>3%</td></tr>
+        <tr><td>Wilderness Fragment</td><td>6%</td></tr>
+      </table>
+      <h3>World Map Rewards</h3>
+      <table>
+        <tr><th>Reward</th><th>Chance</th></tr>
+        <tr><td>75 Shards</td><td>40%</td></tr>
+        <tr><td>Mithril Pack</td><td>25%</td></tr>
+        <tr><td>Rune Pack</td><td>15%</td></tr>
+        <tr><td>4-6 assorted runes</td><td>12%</td></tr>
+        <tr><td>15 Shard Dust</td><td>5%</td></tr>
+        <tr><td>Shiney Pack</td><td>3%</td></tr>
+      </table>
+      <p>Map locations are selected randomly from saved coordinate lists. Wildy Maps choose from Wilderness locations, while World Maps choose from locations across the rest of Gielinor.</p>
+    </section>
+
+    <section>
+      <h2>Settings</h2>
+      <table>
+        <tr><th>Setting</th><th>Meaning</th></tr>
+        <tr><td>Earn shards from XP</td><td>Turns XP shard gain on or off.</td></tr>
+        <tr><td>Enable sounds</td><td>Turns PokeScape sounds on or off, including interface sounds, opening the wheel, pack reveals, wheel rewards, evolution, duplicate trades, rune/essence/pack drop rewards, and treasure casket sounds.</td></tr>
+        <tr><td>Sound volume</td><td>Controls PokeScape sound volume from 0 to 100.</td></tr>
+      </table>
+      <p>XP per shard is fixed at 1000 and is not exposed as a setting.</p>
+    </section>
+
+    <section>
+      <h2>Player Notes</h2>
+      <ul>
+        <li>PokeScape is designed as a side collection game, so rewards are plugin-only and do not create OSRS items.</li>
+        <li>Many systems are still being balanced. Costs, rates, reward tables, and available cards may change between builds.</li>
+        <li>Wilderness Cards are still being developed, with reveal and fragment systems being tested and balanced.</li>
+        <li>Some cards are intentionally kept out of normal packs so they can be earned through evolution or future systems.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
