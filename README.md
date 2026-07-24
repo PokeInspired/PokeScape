@@ -8,10 +8,16 @@ Open packs, build your album, trade duplicates, earn shards, chase shiny cards, 
 
 ### Main Sidebar
 
-<p align="center">
-  <img src="images/sidebar-main.png" width="30%">
-  <img src="images/143-snoozelax.gif" width="70%">
-</p>
+<table align="center">
+  <tr>
+    <td width="80%">
+      <img src="images/sidebar-main.png" width="100%">
+    </td>
+    <td width="20%" align="center">
+      <img src="images/143-snoozelax.gif" width="100%">
+    </td>
+  </tr>
+</table>
 
 ### Collection Album
 
