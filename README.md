@@ -6,7 +6,7 @@ Open packs, build your album, trade duplicates, earn shards, chase shiny cards, 
 
 ## Screenshots
 
-### Main Sidebar
+### Main Sidebar & Preview card
 
 <p align="center">
   <img src="images/sidebar-main.png" alt="Sidebar">
