@@ -8,7 +8,7 @@ Open packs, build your album, trade duplicates, earn shards, chase shiny cards, 
 
 ### Main Sidebar
 
-![PokeScape main sidebar](images/sidebar-main.png)
+![PokeScape main sidebar](images/sidebar-main.png)(images/143-snoozelax.gif)
 
 ### Collection Album
 
