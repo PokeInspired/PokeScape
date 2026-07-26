@@ -74,7 +74,7 @@ This repository uses Git LFS for the large `pokescape.jar` file. GitHub source-c
 
 Use the **Releases** page instead and download:
 
-`PokeScape-v0.3-SideLoader.zip`
+`PokeScape-v0.4-SideLoader.zip`
 
 ## Jagex Launcher Notes
 

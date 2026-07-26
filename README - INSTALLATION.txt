@@ -1,4 +1,4 @@
-PokeScape 0.3 - Launcher Instructions
+PokeScape 0.4 - Launcher Instructions
 =====================================
 
 This folder has two launchers:
