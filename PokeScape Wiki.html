@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PokeScape 0.4 Wiki</title>
+  <title>PokeScape 0.5 Wiki</title>
   <style>
     :root {
       --bg: #12100e;
@@ -89,10 +89,10 @@
 </head>
 <body>
   <header>
-    <h1>PokeScape 0.4 Wiki</h1>
+    <h1>PokeScape 0.5 Wiki</h1>
     <p class="subtitle">A collection side game where Old School RuneScape activities feed a RuneScape themed monster-card album.</p>
     <div class="notice">
-      <strong>Work in progress:</strong> PokeScape 0.4 is an early build. Some content, cards, evolutions, Shiney cards, Wilderness cards, rewards, and balancing may not be available yet.
+      <strong>Work in progress:</strong> PokeScape 0.5 is an early build. Some content, cards, evolutions, Shiney cards, Wilderness cards, rewards, encounters, and balancing may not be available yet.
     </div>
   </header>
 
@@ -114,6 +114,7 @@
         <div class="card"><strong>Evolutions</strong><br>Some cards evolve using runes, essences, and evolution stones.</div>
         <div class="card"><strong>Drops</strong><br>Runes and essences can come from XP drops, monsters, bosses, and clue reward caskets.</div>
         <div class="card"><strong>Treasure Maps</strong><br>Buy Wildy or World maps, follow directional clues, click the treasure casket, watch the prize reel, then claim the rolled treasure.</div>
+        <div class="card"><strong>Wild Encounters</strong><br>While roaming, a wild card can appear nearby. Inspect it, battle with your party, or use capture charms to try to catch it.</div>
       </div>
     </section>
 
@@ -121,11 +122,11 @@
       <h2>Album Sections</h2>
       <table>
         <tr><th>Section</th><th>Slots</th><th>Status</th></tr>
-        <tr><td>PokeScape Cards</td><td>188 total: 151 creature cards, 26 trainer cards, 11 energy cards</td><td>Active in v0.4</td></tr>
-        <tr><td>Shiney Cards</td><td>44</td><td>Active in v0.4. Shiney cards use the holo overlay and can be previewed in the Shiney tab.</td></tr>
+        <tr><td>PokeScape Cards</td><td>188 total: 151 creature cards, 26 trainer cards, 11 energy cards</td><td>Active in v0.5</td></tr>
+        <tr><td>Shiney Cards</td><td>44</td><td>Active in v0.5. Shiney cards use the holo overlay and can be previewed in the Shiney tab.</td></tr>
         <tr><td>Wilderness Cards</td><td>25</td><td>Coming soon by default. Toggle can show locked slots.</td></tr>
       </table>
-      <p>The album header counts all planned sections, so collection percentage can look low in v0.4. That is expected.</p>
+      <p>The album header counts Main and Shiney cards. Wilderness progress is shown separately because those cards use the reveal-seal system.</p>
     </section>
 
     <section>
@@ -162,18 +163,18 @@
         <li>Free spins cost 0 shards.</li>
         <li>Free spins always use the same odds as a 10 shard spin.</li>
         <li>Higher shard stakes improve some reward odds.</li>
-        <li>Wilderness fragments start at 0.1% on a 10 shard spin.</li>
-        <li>Wilderness fragments max at 5% at 500 shards.</li>
+        <li>Wilderness fragments start at 5% on a 10 shard spin.</li>
+        <li>Wilderness fragments max at 10% at 500 shards.</li>
       </ul>
       <h3>Current Wheel Odds</h3>
       <table>
         <tr><th>Reward</th><th>10 shard spin</th><th>High stake direction</th></tr>
-        <tr><td>Card</td><td>50.9%</td><td>Goes down as other rewards improve.</td></tr>
-        <tr><td>Shards</td><td>22.0%</td><td>Can rise up to 28.0%.</td></tr>
+        <tr><td>Card</td><td>48.5%</td><td>Goes down as other rewards improve.</td></tr>
+        <tr><td>Shards</td><td>19.5%</td><td>Can rise up to 25.5%.</td></tr>
         <tr><td>Pack</td><td>7.0%</td><td>Can rise up to 13.0%.</td></tr>
         <tr><td>Free Spins</td><td>16.0%</td><td>Can rise up to 18.0%.</td></tr>
         <tr><td>Loot Bag</td><td>4.0%</td><td>Can rise up to 7.0%.</td></tr>
-        <tr><td>Wilderness Fragment</td><td>0.1%</td><td>Maxes at 5.0% at 500 shards.</td></tr>
+        <tr><td>Wilderness Fragment</td><td>5.0%</td><td>Maxes at 10.0% at 500 shards.</td></tr>
       </table>
       <h3>Wheel Rewards</h3>
       <table>
@@ -247,7 +248,7 @@
 
     <section>
       <h2>Rune Drops From XP</h2>
-      <p>Every XP drop from the listed skill rolls each listed rune at 1:150.</p>
+      <p>Every XP drop from the listed skill rolls each listed rune at 1:300.</p>
       <table>
         <tr><th>Skill</th><th>Rune reward</th></tr>
         <tr><td>Attack, Strength, Defence, Hitpoints, Agility</td><td>Body Rune</td></tr>
@@ -317,11 +318,56 @@
     </section>
 
     <section>
+      <h2>Wild Encounters And Battles</h2>
+      <p>While roaming around Gielinor, PokeScape can spawn a wild card nearby. The small notice appears on the game screen; click it to inspect the encounter. Encounters are intentionally uncommon and currently roll around once every 900 game ticks.</p>
+      <ul>
+        <li>Choose a card from your party to battle.</li>
+        <li>Your party can hold up to 6 cards.</li>
+        <li>Only Main and Wilderness cards can be added to the party; Shiney cards are not used for party battling yet.</li>
+        <li>Only 1 Wilderness card can be in your party at a time.</li>
+        <li>If your party card faints, it goes on a 20 minute recovery timer before it can be used or removed.</li>
+        <li>Wild encounter rarity depends on the area. Higher-risk or higher-level areas can roll better rarity. Wilderness encounters can very rarely include legendary cards.</li>
+      </ul>
+      <p>Battle attacks use the names and damage printed on the card. Attacks can miss, and some move names can trigger simple effects such as guard, burn, stun, root, weaken, or heal. Type advantage matters: a strong attack deals 50% more damage.</p>
+      <p>Winning a battle can award shards, Shard Dust, and sometimes a capture charm. The result appears after a short delay so the knockout has time to read on screen.</p>
+    </section>
+
+    <section>
+      <h2>Capture Charms</h2>
+      <p>Pressing Capture on a wild encounter opens the charm picker. Pick which charm to spend, and the button shows how many you own plus the current capture chance for that wild card.</p>
+      <table>
+        <tr><th>Charm</th><th>Base capture rate</th></tr>
+        <tr><td>Bronze Charm</td><td>18%</td></tr>
+        <tr><td>Iron Charm</td><td>28%</td></tr>
+        <tr><td>Mithril Charm</td><td>42%</td></tr>
+        <tr><td>Rune Charm</td><td>58%</td></tr>
+        <tr><td>Abyssal Charm</td><td>76%</td></tr>
+      </table>
+      <p>The final capture chance is <code>charm base + missing HP bonus - rarity penalty</code>. Damaging the wild card can add up to +30%. Final chance is clamped between 3% and 92%.</p>
+      <table>
+        <tr><th>Wild card rarity</th><th>Capture penalty</th></tr>
+        <tr><td>Common</td><td>0%</td></tr>
+        <tr><td>Uncommon</td><td>-6%</td></tr>
+        <tr><td>Rare</td><td>-14%</td></tr>
+        <tr><td>Epic</td><td>-24%</td></tr>
+        <tr><td>Legendary</td><td>-34%</td></tr>
+      </table>
+      <h3>Charm Rewards From Battles</h3>
+      <table>
+        <tr><th>Defeated wild card rarity</th><th>Possible charm drops</th></tr>
+        <tr><td>Common</td><td>14% Bronze Charm, 4% Iron Charm</td></tr>
+        <tr><td>Uncommon</td><td>10% Iron Charm, 6% Mithril Charm, 2% Bronze Charm</td></tr>
+        <tr><td>Rare</td><td>8% Mithril Charm, 4% Rune Charm, 2% Iron Charm</td></tr>
+        <tr><td>Epic</td><td>7% Rune Charm, 3% Abyssal Charm, 3% Mithril Charm</td></tr>
+      </table>
+    </section>
+
+    <section>
       <h2>Buried Treasure Maps</h2>
       <p>Treasure Maps live on the Maps tab. Buy a map first, then click Begin when you are ready to start tracking it. Only one map can be active at a time. If you die while a map is active, the active map is lost and no reward is given.</p>
       <ul>
-        <li>Wildy Maps cost 300 shards and must be tracked inside the Wilderness.</li>
-        <li>World Maps cost 150 shards and lead to non-Wilderness locations around the rest of the game world.</li>
+        <li>Wildy Maps cost 150 shards and must be tracked inside the Wilderness.</li>
+        <li>World Maps cost 100 shards and lead to non-Wilderness locations around the rest of the game world.</li>
         <li>The Track button gives direction-only chat clues such as north, south, east, or west. It does not reveal the exact tile count.</li>
         <li>When you stand on the correct tile and press Track, a treasure casket appears on the main game screen.</li>
         <li>The casket does not open instantly. Click the closed casket to open it, then the prize reel rolls and freezes on the actual reward.</li>
@@ -330,17 +376,17 @@
       <h3>Wildy Map Rewards</h3>
       <table>
         <tr><th>Reward</th><th>Chance</th></tr>
-        <tr><td>150 Shards</td><td>42%</td></tr>
+        <tr><td>75 Shards</td><td>38%</td></tr>
         <tr><td>Rune Pack</td><td>25%</td></tr>
         <tr><td>25 Shard Dust</td><td>14%</td></tr>
         <tr><td>4-6 assorted runes</td><td>10%</td></tr>
         <tr><td>Shiney Pack</td><td>3%</td></tr>
-        <tr><td>Wilderness Fragment</td><td>6%</td></tr>
+        <tr><td>Wilderness Fragment</td><td>10%</td></tr>
       </table>
       <h3>World Map Rewards</h3>
       <table>
         <tr><th>Reward</th><th>Chance</th></tr>
-        <tr><td>75 Shards</td><td>40%</td></tr>
+        <tr><td>50 Shards</td><td>40%</td></tr>
         <tr><td>Mithril Pack</td><td>25%</td></tr>
         <tr><td>Rune Pack</td><td>15%</td></tr>
         <tr><td>4-6 assorted runes</td><td>12%</td></tr>

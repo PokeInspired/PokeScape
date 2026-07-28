@@ -74,7 +74,7 @@ This repository uses Git LFS for the large `pokescape.jar` file. GitHub source-c
 
 Use the **Releases** page instead and download:
 
-`PokeScape-v0.4-SideLoader.zip`
+`PokeScape-v0.5-SideLoader.zip`
 
 ## Jagex Launcher Notes
 
@@ -115,6 +115,8 @@ PokeScape currently includes:
 - Duplicate card trading
 - PokeScape Wheel
 - Treasure maps
+- Wild roaming card encounters
+- Party battle and charm capture system
 - Rune and essence drops
 - Clue casket rewards
 - Evolution stones and card evolution
