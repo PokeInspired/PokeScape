@@ -117,7 +117,7 @@ PokeScape currently includes:
 - Treasure maps
 - Wild roaming card encounters
 - Party battle and charm capture system
-- Card conditions: Worn, Standard, Polished, and Pristine
+- Card conditions: Dirty, Worn, Polished, and Pristine
 - Card viewer version toggle for owned condition versions
 - Rune and essence drops
 - Clue casket rewards
