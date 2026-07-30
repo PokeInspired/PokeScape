@@ -122,6 +122,9 @@ PokeScape currently includes:
 - Rune and essence drops
 - Clue casket rewards
 - Evolution stones and card evolution
+- Two active expeditions with locked mission timers
+- Party tab card viewer and right-click party removal
+- The Mad Angel boss pack tracking
 - Sounds and full-screen reward animations
 
 Open `PokeScape Wiki.html` for the full player guide.
