@@ -1,5 +1,5 @@
-PokeScape 0.5 - Launcher Instructions
-=====================================
+PokeScape - Launcher Instructions
+=================================
 
 This folder has two launchers:
 

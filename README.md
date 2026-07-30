@@ -72,9 +72,9 @@ Do **not** use GitHub's green **Code > Download ZIP** button for the playable bu
 
 This repository uses Git LFS for the large `pokescape.jar` file. GitHub source-code ZIP downloads can include a tiny pointer file instead of the real jar. If your `pokescape.jar` is about 1 KB, you downloaded the source archive, not the playable release.
 
-Use the **Releases** page instead and download:
+Use the **Releases** page instead and download the newest SideLoader zip.
 
-`PokeScape-v0.5-SideLoader.zip`
+The zip should contain the real `pokescape.jar`, launchers, icon, install readme, reset tool, and wiki.
 
 ## Jagex Launcher Notes
 
@@ -117,6 +117,8 @@ PokeScape currently includes:
 - Treasure maps
 - Wild roaming card encounters
 - Party battle and charm capture system
+- Card conditions: Worn, Standard, Polished, and Pristine
+- Card viewer version toggle for owned condition versions
 - Rune and essence drops
 - Clue casket rewards
 - Evolution stones and card evolution

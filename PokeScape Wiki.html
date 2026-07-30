@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PokeScape 0.5 Wiki</title>
+  <title>PokeScape Wiki</title>
   <style>
     :root {
       --bg: #12100e;
@@ -89,10 +89,10 @@
 </head>
 <body>
   <header>
-    <h1>PokeScape 0.5 Wiki</h1>
+    <h1>PokeScape Wiki</h1>
     <p class="subtitle">A collection side game where Old School RuneScape activities feed a RuneScape themed monster-card album.</p>
     <div class="notice">
-      <strong>Work in progress:</strong> PokeScape 0.5 is an early build. Some content, cards, evolutions, Shiney cards, Wilderness cards, rewards, encounters, and balancing may not be available yet.
+      <strong>Work in progress:</strong> PokeScape is an early build. Some content, cards, evolutions, Shiney cards, Wilderness cards, rewards, encounters, and balancing may not be available yet.
     </div>
   </header>
 
@@ -122,11 +122,11 @@
       <h2>Album Sections</h2>
       <table>
         <tr><th>Section</th><th>Slots</th><th>Status</th></tr>
-        <tr><td>PokeScape Cards</td><td>188 total: 151 creature cards, 26 trainer cards, 11 energy cards</td><td>Active in v0.5</td></tr>
-        <tr><td>Shiney Cards</td><td>44</td><td>Active in v0.5. Shiney cards use the holo overlay and can be previewed in the Shiney tab.</td></tr>
+        <tr><td>PokeScape Cards</td><td>188 total: 151 creature cards, 26 trainer cards, 11 energy cards</td><td>Active in the current build.</td></tr>
+        <tr><td>Shiney Cards</td><td>44</td><td>Active in the current build. Shiney cards use the holo overlay and can be previewed in the Shiney tab.</td></tr>
         <tr><td>Wilderness Cards</td><td>25</td><td>Coming soon by default. Toggle can show locked slots.</td></tr>
       </table>
-      <p>The album header counts Main and Shiney cards. Wilderness progress is shown separately because those cards use the reveal-seal system.</p>
+      <p>The album header counts Main and Shiney cards. Wilderness progress is shown separately because those cards use the reveal-seal system. Main card collection totals only count cards once a Pristine version has been found. Lower condition copies still appear in the album and can still be used, but they do not increase the collected-card total.</p>
     </section>
 
     <section>
@@ -143,6 +143,25 @@
     </section>
 
     <section>
+      <h2>Card Conditions</h2>
+      <p>Normal creature cards, trainer cards, and energy cards can roll a condition when earned. Conditions add visual overlays to the card and affect battle strength. Shiney cards do not have conditions.</p>
+      <table>
+        <tr><th>Condition</th><th>Album effect</th><th>Battle effect</th><th>Duplicate trade value</th></tr>
+        <tr><td>Worn</td><td>Heavy worn overlay</td><td>-40% damage</td><td>x1</td></tr>
+        <tr><td>Standard</td><td>Light wear overlay</td><td>-30% damage</td><td>x1</td></tr>
+        <tr><td>Polished</td><td>Cleaner overlay</td><td>-20% damage</td><td>x2</td></tr>
+        <tr><td>Pristine</td><td>No condition overlay</td><td>No damage debuff</td><td>x3</td></tr>
+      </table>
+      <ul>
+        <li>The album shows the best condition version you own by default.</li>
+        <li>The main sidebar and album collection totals only increase when you own the Pristine version.</li>
+        <li>When viewing a card, use the Versions toggle at the top of the viewer. With it on, the left and right arrows cycle only the owned condition versions of that same card.</li>
+        <li>The party selector shows the best owned version of each eligible card, including its condition overlay and condition tag.</li>
+        <li>Captured cards also roll a condition.</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>Packs</h2>
       <table>
         <tr><th>Pack</th><th>Cost</th><th>Cards</th><th>Rules</th></tr>
@@ -152,6 +171,7 @@
         <tr><td>Shiney Pack</td><td>100 Shard Dust</td><td>1</td><td>Gives 1 random non-legendary Shiney card with the Shiney reveal animation.</td></tr>
       </table>
       <p>Normal packs do not include third evolutions, legendary cards, Eevee evolutions, Mew, Mewtwo, or the three legendary birds. Those are intended for other systems such as evolution or future rewards. Shiney rolls also exclude Shiney legendary cards.</p>
+      <p>Cards pulled from normal packs roll a card condition. Shiney cards from Shiney Packs or Shiney upgrade rolls do not roll a condition.</p>
       <p>If you own a pack, you can open it without spending shards. If you choose to buy a pack with shards, you can cancel before opening and get the shards back.</p>
     </section>
 
@@ -219,7 +239,7 @@
         <tr><td>Epic</td><td>1 duplicate card = 1 shard</td></tr>
         <tr><td>Shiney duplicate cards</td><td>1 duplicate Shiney = 10 Shard Dust</td></tr>
       </table>
-      <p>Left-click adds a duplicate to the trade. Right-click removes one. Normal card trades have a 20% chance to award Shard Dust instead of shards; when that happens, the trade animation uses the Shard Dust reward image.</p>
+      <p>Left-click adds a duplicate to the trade. Right-click removes one. Use Sell All to automatically select a clean set of tradable duplicates. The trade screen can filter by card condition, and condition multipliers are included in the trade value. Normal card trades have a 20% chance to award Shard Dust instead of shards; when that happens, the trade animation uses the Shard Dust reward image.</p>
     </section>
 
     <section>
@@ -323,12 +343,11 @@
       <ul>
         <li>Choose a card from your party to battle.</li>
         <li>Your party can hold up to 6 cards.</li>
-        <li>Only Main and Wilderness cards can be added to the party; Shiney cards are not used for party battling yet.</li>
-        <li>Only 1 Wilderness card can be in your party at a time.</li>
+        <li>Only Main cards can be added to the party in the current build; Shiney and Wilderness cards are not used for party battling yet.</li>
         <li>If your party card faints, it goes on a 20 minute recovery timer before it can be used or removed.</li>
         <li>Wild encounter rarity depends on the area. Higher-risk or higher-level areas can roll better rarity. Wilderness encounters can very rarely include legendary cards.</li>
       </ul>
-      <p>Battle attacks use the names and damage printed on the card. Attacks can miss, and some move names can trigger simple effects such as guard, burn, stun, root, weaken, or heal. Type advantage matters: a strong attack deals 50% more damage.</p>
+      <p>Battle attacks use the names and damage printed on the card. Attacks can miss, and some move names can trigger simple effects such as guard, burn, stun, root, weaken, or heal. Type advantage matters: a strong attack deals 50% more damage. Card conditions apply damage debuffs, so Worn cards hit much weaker than Pristine cards.</p>
       <p>Winning a battle can award shards, Shard Dust, and sometimes a capture charm. The result appears after a short delay so the knockout has time to read on screen.</p>
     </section>
 
