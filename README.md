@@ -123,8 +123,10 @@ PokeScape currently includes:
 - Clue casket rewards
 - Evolution stones and card evolution
 - Two active expeditions with locked mission timers
+- Expedition card picker filters and mouse-wheel scrolling
 - Party tab card viewer and right-click party removal
 - The Mad Angel boss pack tracking
+- Capture checking, success, and failure sounds
 - Sounds and full-screen reward animations
 
 Open `PokeScape Wiki.html` for the full player guide.
